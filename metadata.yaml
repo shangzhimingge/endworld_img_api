@@ -1,4 +1,5 @@
-name: 随机图片
+name: astrbot_plugin_endworld_img_api
+display_name: 随机图片
 desc: 一个为AstrBot打造的自定义API获取随机图片分发插件。禁止用于非法用途。
 help: 使用自定义指令获取图片。请在配置中设置正确的API地址。
 version: v4.9 # 插件版本号
