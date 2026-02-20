@@ -1,6 +1,6 @@
-name: mccloud_img
-desc: 一个从API获取图片的插件，支持自定义API地址。使用 /img 获取图片。禁止用于非法用途。 
-help: 使用 /img 获取图片。请在配置中设置正确的API地址。
-version: v1.0 # 插件版本号
-author: MC云-小馒头
-repo: https://github.com/MCYUNIDC/mccloud_img
+name: endworld_img_api
+desc: 一个为AstrBot打造的随机图片分发插件。禁止用于非法用途。
+help: 使用自定义指令获取图片。请在配置中设置正确的API地址。
+version: v4.9 # 插件版本号
+author: 殇之冥歌
+repo: https://github.com/shangzhimingge/endworld_img_api
