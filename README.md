@@ -3,8 +3,7 @@
 一个为AstrBot打造的自定义API获取随机图片分发插件。
 本插件从原 (https://github.com/MCYUNIDC/mccloud_img) 分支派生，经历了彻底的底层重构，从单一的图片获取工具，进化为**支持多指令分流、智能防超时、全网 API 兼容**的高级图片引擎。
 
-<img width="1408" height="768" alt="image_32ea64a6-9111-4b89-81c3-1bfa96a0b14d" src="https://github.com/user-attachments/assets/41571144-81f9-4003-9039-530dba2e809f" />
-
+<img width="1408" height="768" alt="image_602ec539-0c6a-426f-877a-8dcd374be08c" src="https://github.com/user-attachments/assets/8a5c7712-ff32-44d3-b051-7b881f3e16a2" />
 
 ## ✨ 插件变化
 
