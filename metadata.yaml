@@ -2,6 +2,6 @@ name: astrbot_plugin_endworld_img_api
 display_name: 随机图片
 desc: 一个自定义API获取图片插件。 支持多指令分流、智能防超时、全网 API 兼容的高级图片引擎。基于mccloud_img重构。
 help: 使用自定义指令获取图片。请在配置中设置正确的API地址。
-version: v4.9 # 插件版本号
+version: v5.6 # 插件版本号
 author: 殇之冥歌
 repo: https://github.com/shangzhimingge/astrbot_plugin_endworld_img_api
