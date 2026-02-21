@@ -6,9 +6,12 @@
         "default": [
             {
                 "__template_key": "default_source",
-                "name": "默认随机图",
+                "name": "默认随机图片",
                 "keywords": ["涩涩", "来点图"],
-                "apis": ["https://api.example.com/img"]
+                "apis": ["https://api.example.com/img"],
+                "list_mode": "无限制",
+                "group_list": [],
+                "recall_delay": 0
             }
         ],
         "templates": {
@@ -30,15 +33,45 @@
                         "type": "list",
                         "description": "API 链接列表",
                         "default": []
+                    },
+                    "list_mode": {
+                        "type": "string",
+                        "description": "分群管理",
+                        "hint": "黑名单表示在以下群组不响应，白名单表示仅在以下群组响应",
+                        "options": ["无限制", "黑名单", "白名单"],
+                        "default": "无限制"
+                    },
+                    "group_list": {
+                        "type": "list",
+                        "description": "群号列表",
+                        "hint": "如选择黑/白名单则适用此列表",
+                        "default": []
+                    },
+                    "recall_delay": {
+                        "type": "int",
+                        "description": "自动撤回时间 (秒)",
+                        "hint": "发送后多久自动撤回图片。0 表示不撤回",
+                        "default": 0,
+                        "minimum": 0
                     }
                 }
             }
         }
     },
+    "catgirl_enable": {
+        "type": "bool",
+        "description": "开启猫娘模式",
+        "hint": "开启后，所有文本提示末尾会自动加上自定义的后缀词",
+        "default": false
+    },
+    "catgirl_suffix": {
+        "type": "string",
+        "description": "猫娘模式后缀词",
+        "default": "喵~"
+    },
     "send_retries": {
         "type": "int",
         "description": "发送失败重试次数",
-        "hint": "网络波动会导致发送失败，重试通常能解决问题。建议设置 3 次。",
         "default": 3,
         "minimum": 0,
         "maximum": 10
@@ -51,7 +84,6 @@
     "compress_threshold": {
         "type": "int",
         "description": "压缩阈值 (MB)",
-        "hint": "图片超过此大小时才压缩。若想发原图，可设为 50 或 100。",
         "default": 5,
         "minimum": 1
     },
@@ -68,6 +100,6 @@
     "verify_ssl": {
         "type": "bool",
         "description": "验证 SSL 证书",
-        "default": false
+        "default": true
     }
 }
