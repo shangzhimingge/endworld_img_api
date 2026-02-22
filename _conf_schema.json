@@ -9,6 +9,7 @@
                 "name": "默认随机图片",
                 "keywords": ["涩涩", "来点图"],
                 "apis": ["https://api.example.com/img"],
+                "use_forward": false,
                 "list_mode": "无限制",
                 "group_list": [],
                 "recall_delay": 0
@@ -34,6 +35,12 @@
                         "description": "API 链接列表",
                         "default": []
                     },
+                    "use_forward": {
+                        "type": "bool",
+                        "description": "使用合并转发发送",
+                        "hint": "开启后，此图源发出的图片/链接会被伪装在合并转发卡片内，防吞效果极佳",
+                        "default": false
+                    },
                     "list_mode": {
                         "type": "string",
                         "description": "分群管理",
@@ -50,7 +57,7 @@
                     "recall_delay": {
                         "type": "int",
                         "description": "自动撤回时间 (秒)",
-                        "hint": "发送后多久自动撤回图片。0 表示不撤回",
+                        "hint": "发送后多久自动撤回。0 表示不撤回",
                         "default": 0,
                         "minimum": 0
                     }
